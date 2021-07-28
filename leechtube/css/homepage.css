@@ -1,0 +1,36 @@
+#titr,.fullpanel,.row{
+  text-align:center;
+
+}
+/*
+ * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+/* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
+
+.business-header {
+    height: 400px;
+    background: url('./background.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+margin-top: -21%;
+}
+
+/* Customize the text color and shadow color and to optimize text legibility. */
+
+.tagline {
+  margin-top: 1%;
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}

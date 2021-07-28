@@ -1,0 +1,241 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "8ae819ea84d16c08632cb69c561fb1a7",
+    "content-hash": "b6b467552f5f992ef8e22752d4e544e2",
+    "packages": [
+        {
+            "name": "chrisboulton/php-resque",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chrisboulton/php-resque.git",
+                "reference": "cf187fae522df085f79837d3763645da066194d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chrisboulton/php-resque/zipball/cf187fae522df085f79837d3763645da066194d6",
+                "reference": "cf187fae522df085f79837d3763645da066194d6",
+                "shasum": ""
+            },
+            "require": {
+                "colinmollenhour/credis": "~1.7",
+                "ext-pcntl": "*",
+                "php": ">=5.3.0",
+                "psr/log": "1.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "ext-proctitle": "Allows php-resque to rename the title of UNIX processes to show the status of a worker.",
+                "ext-redis": "Native PHP extension for Redis connectivity. Credis will automatically utilize when available."
+            },
+            "bin": [
+                "bin/resque"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Resque": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Boulton",
+                    "email": "chris@bigcommerce.com"
+                }
+            ],
+            "description": "Redis backed library for creating background jobs and processing them later. Based on resque for Ruby.",
+            "homepage": "http://www.github.com/chrisboulton/php-resque/",
+            "keywords": [
+                "background",
+                "job",
+                "redis",
+                "resque"
+            ],
+            "time": "2016-11-03 21:56:00"
+        },
+        {
+            "name": "colinmollenhour/credis",
+            "version": "1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colinmollenhour/credis.git",
+                "reference": "74b2b703da5c58dc07fb97e8954bc63280b469bf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colinmollenhour/credis/zipball/74b2b703da5c58dc07fb97e8954bc63280b469bf",
+                "reference": "74b2b703da5c58dc07fb97e8954bc63280b469bf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Client.php",
+                    "Cluster.php",
+                    "Sentinel.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Colin Mollenhour",
+                    "email": "colin@mollenhour.com"
+                }
+            ],
+            "description": "Credis is a lightweight interface to the Redis key-value store which wraps the phpredis library when available for better performance.",
+            "homepage": "https://github.com/colinmollenhour/credis",
+            "time": "2016-03-24 15:50:52"
+        },
+        {
+            "name": "gabordemooij/redbean",
+            "version": "v4.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gabordemooij/redbean.git",
+                "reference": "1c7ec69850e9f7966ff7feb87b01d8f43a9753d3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gabordemooij/redbean/zipball/1c7ec69850e9f7966ff7feb87b01d8f43a9753d3",
+                "reference": "1c7ec69850e9f7966ff7feb87b01d8f43a9753d3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RedBeanPHP\\": "RedBeanPHP"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "New BSD and GPLv2"
+            ],
+            "authors": [
+                {
+                    "name": "Gabor de Mooij",
+                    "email": "gabor@redbeanphp.com",
+                    "homepage": "http://redbeanphp.com"
+                }
+            ],
+            "description": "RedBeanPHP ORM",
+            "homepage": "http://redbeanphp.com/",
+            "keywords": [
+                "orm"
+            ],
+            "time": "2016-10-03 21:25:17"
+        },
+        {
+            "name": "mustache/mustache",
+            "version": "v2.11.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bobthecow/mustache.php.git",
+                "reference": "a3f6d55996dd28b58f3a909d474189a3c1aa693f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bobthecow/mustache.php/zipball/a3f6d55996dd28b58f3a909d474189a3c1aa693f",
+                "reference": "a3f6d55996dd28b58f3a909d474189a3c1aa693f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "~1.11",
+                "phpunit/phpunit": "~3.7|~4.0|~5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Mustache": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Justin Hileman",
+                    "email": "justin@justinhileman.info",
+                    "homepage": "http://justinhileman.com"
+                }
+            ],
+            "description": "A Mustache implementation in PHP.",
+            "homepage": "https://github.com/bobthecow/mustache.php",
+            "keywords": [
+                "mustache",
+                "templating"
+            ],
+            "time": "2016-07-31 06:18:27"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Psr\\Log\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2012-12-21 11:40:51"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "chrisboulton/php-resque": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

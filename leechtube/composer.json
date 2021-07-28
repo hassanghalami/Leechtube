@@ -1,0 +1,7 @@
+{
+    "require": {
+        "mustache/mustache": "^2.11",
+        "gabordemooij/redbean": "^4.3",
+        "chrisboulton/php-resque": "dev-master"
+    }
+}
